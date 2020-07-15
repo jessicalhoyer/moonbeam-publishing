@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+	Case Project
+	Author: Jessica Hoyer
+	Date: Sep 3 2019
+	-->
+
+	<title>Moonbeam Publishing | Service Quote</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="publishstyles.css" type="text/css"/>
+	
+</head>
+<body>
+	<header id="top">
+	<img src="moon-test.jpg" alt="Moonbeam Publishing logo" title="Moonbeam Publishing logo" />
+	<div class="logo-text">Moonbeam Publishing</div>
+	</header>
+	
+	<!-- navigation menu -->
+	<nav>
+	<ul><li><a href="index.html">Home</a>
+	</li><li><a href="about.html">About</a>
+	</li><li><a href="books.html">Books</a>
+	</li><li><a href="events.html">Events</a>
+	</li><li><a href="services.html">Services</a>
+	</li><li><a href="contact.html">Contact</a>
+	</nav>
+	
+	<!-- main content wrapper -->
+	<div id="wrapper">
+		<section id="main">
+		<h1>Service Quote</h1>
+		<p>Take a look below to review our different service options and get your free quote!</p>
+		
+	<form id="service-quote">
+		<h2>Manuscript Revision</h2>
+			<p>Have your manuscript critiqued and reviewed by our agents. Please choose how thoroughly you would like your manuscript to be reviewed. Prices will be dependent on the type of service and the number of pages of your manuscript you would like us to review.</p>
+			
+			<p><b>Basic:</b> General comments and general impression will be given.</p>
+			
+			<p><b>Revision:</b> Manuscript will be edited according to grammar and styling rules. Mild comments may be made.</p>
+			
+			<p><b>Deluxe:</b> Manuscript will be thoroughly read, revised, and comments will be made throughout.</p>
+			
+			<p><b>Complete:</b> Manuscript will be thoroughly read, revised, and comments will be made throughout. There will be one follow-up meeting afterward with an opportunity for further revisions.</p>
+			
+		<fieldset>
+			<input type="checkbox" name="mService" id="mService" value="mService"/>
+			<label for="mService">I would like this service</label>
+			<br/>
+		<div id="manuDetails">
+			<label for="manuService">Manuscript Service:</label>
+			<select name="manuService" id="manuService">
+			<option value="0" selected="selected">None</option>
+			<option value="100">Basic ($100)</option>
+			<option value="150">Revision ($150)</option>
+			<option value="300">Deluxe ($300)</option>
+			<option value="500">Complete ($500)</option>
+			</select>
+			<br/><br/>
+			<label for="manuPages">Manuscript Pages:</label>
+			<input type="number" name="manuPages" id="manuPages" min="0" value="0" />
+		</div>
+		</fieldset>
+		
+		<h2>Book Layout</h2>
+			<p>Coordinating the layout of the final print of the book, including fonts, spacing, chapters, and any artwork or illustrations such as maps. Price is $200.</p>
+		<fieldset>
+			<input type="checkbox" name="bookLayout" id="bookLayout" value="bookLayout"/>
+			<label for="bookLayout">I would like this service</label>
+		</fieldset>
+		
+		<h2>Cover Design</h2>
+			<p>We employ several graphic designers who can craft the perfect cover for your novel.</p>
+			
+		<fieldset>
+			<input type="checkbox" name="coverDesign" id="coverDesign" value="coverDesign"/>
+			<label for="bookLayout">I would like this service</label>
+		</fieldset>
+		
+		<h2>Printing and Distribution</h2>
+			<p>If your book is already edited and designed, we will be happy to print your book out for you! Bundle discounts are available. Price is $50 per copy. Minimum print is 5, maximum is 5,000. If you need more than 5,000 books printed, please feel free to contact us and we can discuss it further with you.</p>
+			
+			<p>If you would like the additional service of distributing your book to booksellers (such as Barnes and Noble), we will be happy to ship your books out to them, hot off the press! Price is $50 per copy.</p>
+			
+		<fieldset>
+			<input type="checkbox" name="pdService" id="pdService" value="pdService"/>
+			<label for="pdService">I would like this service</label>
+			<br/>
+		<div id="pdDetails">
+			<label for="printing">Print Copies:</label>
+			<input type="number" name="printing" id="printing" min="0" max="5000" value="0" />
+			<br/>
+			<input type="checkbox" name="distribution" id="distribution" value="distribution"/>
+			<label for="distribution">I would like distribution</label>
+		</div>
+		</fieldset>
+		
+		
+		
+		<input type="submit" value="Submit" class="button" id="submit"/>
+		<br/>
+		<input type="reset" value="Reset" class="button" id="reset"/>
+		<br/>
+	</form>
+		</section>
+	</div>
+	
+	<!-- footer -->
+	<footer>
+	Moonbeam Publishing &copy Fall 2019
+	</footer>
+<script src="scripts/modernizr.custom.05819.js"></script>
+<script src="scripts/servicejs.js"></script>
+</body>
+</html>

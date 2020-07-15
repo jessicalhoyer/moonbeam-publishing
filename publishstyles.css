@@ -1,0 +1,203 @@
+/* main styles */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	/*background-color:#494158;*/
+	/*background-color:#61586E;*/
+	background-color:#2f2f2f;
+	/*background:linear-gradient(#fff, #666) no-repeat;*/
+	background-image:url("images/dark-honeycomb.png");
+	background-attachment:fixed;
+	color:#000;
+	font-family:"Open Sans", helvetica, sans-serif;
+	font-size:1em;
+}
+
+/* links */
+
+a {
+	text-decoration:none;
+	color:#fff;
+	
+	transition:all 0.6s ease;
+}
+
+a:hover {
+	color:#aaa;
+}
+
+.button {
+	background-color:#666;
+	border:1px solid #000;
+	padding:0.4em;
+	text-align:center;
+	width:20%;
+	display:block;
+	margin:auto;
+}
+
+/* navigation menu */
+
+nav {
+	margin:auto;
+	text-align:center;
+	top:0;
+	position:sticky;
+	padding:0.8em;
+	background-color:#51475f;
+	box-shadow:1px 1px 5px #000;
+}
+
+nav ul li {
+	display:inline;
+	list-style-type:none;
+	padding:0 0.7em;
+	text-transform:uppercase;
+	font-family:cambria, times new roman, serif;
+	letter-spacing:0.1em;
+}
+
+/* container elements */
+
+#wrapper {
+	width:70%;
+	margin:auto;
+	/*background-color:#61586E;*/
+	background-color:#888;
+}
+
+header {
+	background-color:#000;
+}
+
+header img {
+	width:150px;
+	height:150px;
+	margin:auto;
+	display:block;
+}
+
+footer {
+	margin:auto;
+	width:100%;
+	background-color:#51475f;
+	text-align:center;
+	padding:1em 0;
+}
+
+/* section styles */
+
+#new-release {
+	clear:both;
+}
+
+#main {
+	clear:both;
+}
+
+
+/* text styles */
+
+p {
+	padding:0.7em;
+	line-height:1.5em;
+	text-align:justify;
+	font-size:0.87em;
+}
+
+#errorMsgText, #errorMsgEvent, #errorMsgOption, #errorMsgPhone {
+	color:#a00000;
+	text-align:center;
+}
+
+.logo-text {
+	color:#fff;
+	text-align:center;
+	font-family:cambria;
+	font-variant:small-caps;
+	font-size:3.2em;
+}
+
+/* headings */
+
+h1 {
+	text-align:center;
+	font-family:cambria;
+	font-size:3em;
+	color:#fff;
+	text-shadow:1px 1px 1px black;
+	font-weight:normal;
+}
+
+h2 {
+	text-align:center;
+	font-family:cambria;
+	font-weight:normal;
+	font-size:1.4em;
+}
+
+h3 {
+	
+}
+
+/* form styles */
+
+legend {
+	margin-left:5em;
+}
+
+form input[type="number"] {
+	width:50px;
+}
+
+fieldset {
+	border:1px solid #666;
+	margin:2em;
+	text-align:center;
+	padding:0.3em;
+	background-color:#666;
+}
+
+label {
+	font-size:0.87em;
+	padding:0.7em;
+	font-weight:bold;
+}
+
+textarea, input, select {
+	background-color:#666;
+	border:1px solid #000;
+	padding:0.4em;
+	
+	transition:all 0.6s ease;
+}
+
+input:hover, textarea:hover, select:hover {
+	background-color:#444;
+}
+
+input:focus, textarea:focus, select:focus {
+	background-color:#444;
+}
+
+textarea {
+	margin-bottom:0.2em;
+}
+
+/*
+button {
+	padding:1em;
+	margin:auto;
+	background-color:#000;
+	color:#fff;
+	display:block;
+	margin:auto;
+} */
+
+div#pdDetails, div#manuDetails {
+	display:none;
+}

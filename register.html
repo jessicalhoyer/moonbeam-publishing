@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+	Case Project
+	Author: Jessica Hoyer
+	Date: Sep 3 2019
+	-->
+
+	<title>Moonbeam Publishing | Register</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" href="publishstyles.css" type="text/css"/>
+	
+</head>
+<body>
+	<header id="top">
+	<img src="moon-test.jpg" alt="Moonbeam Publishing logo" title="Moonbeam Publishing logo"/>
+	<div class="logo-text">Moonbeam Publishing</div>
+	</header>
+	
+	<!-- navigation menu -->
+	<nav>
+	<ul><li><a href="index.html">Home</a>
+	</li><li><a href="about.html">About</a>
+	</li><li><a href="books.html">Books</a>
+	</li><li><a href="events.html">Events</a>
+	</li><li><a href="services.html">Services</a>
+	</li><li><a href="contact.html">Contact</a>
+	</nav>
+	
+	<!-- main content wrapper -->
+	<div id="wrapper">
+		
+		<section id="main">
+		<h1>Register for an Event</h1>
+		<p>Please use this page to register for one of our events!</p>
+		
+		<h2>Event List</h2>
+		<p><b>Book Signing:</b> This Wednesday at 11:00am - 3:00pm in the upstairs loft.</p>
+		
+		<p><b>Writing Workshop:</b> This Thursday at 1:00pm - 4:00pm in the U of M library.</p> 
+		
+		<p><b>NaNoWriMo 2019:</b> Dates will be released in October.</p>
+		
+		<p><b>Book Release Party:</b> First Tuesday of every month.</p>
+		
+		<p><b>Fundraising Event:</b> First Friday of every month.</p>
+		
+		<fieldset>
+
+			<label for="firstname">First Name</label>
+			<input type="text" name="firstname" id="firstName" size="40" class="text"/>
+
+<br/><br/>
+
+			<label for="lastname">Last Name</label>
+			<input type="text" name="lastname" id="lastName" size="40" class="text"/>
+<br/><br/>
+
+			<label for="phoneNum">Phone Number</label>
+			<input type="text" name="phoneNum" id="phoneNum" size="40" class="text" placeholder="###-###-####"/>
+<br/><br/>
+
+			<label for="emailaddress">Email Address</label>
+			<input type="email" name="emailaddress" id="emailAddress" size="40" class="text" placeholder="name@anywhere.com"/>
+
+<br/><br/>
+
+			<label for="regEvent">Event Signup:</label>
+			<select name="regEvent" id="regEvent">
+			<option value="bookSign">Book Signing</option>
+			<option value="writeWorkshop">Writing Workshop</option>
+			<option value="nanoPrep">NaNoWriMo Prep</option>
+			<option value="bookRelease">Book Release</option>
+			<option value="fundraiser">Fundraiser</option>
+			</select>
+
+<br/><br/>
+
+			<input type="radio" name="regOption" id="attending"/>
+			<label for="attending">I want to attend</label>
+			<input type="radio" name="regOption" id="volunteering"/>
+			<label for="volunteering">I want to volunteer</label>
+			
+<br/><br/>
+			
+		<form id="attendingForm">
+			
+		</form>
+			
+		<form id="volunteerForm">
+			
+		</form>
+
+		<p id="errorMsgText"></p>
+		<p id="errorMsgPhone"></p>
+		<p id="errorMsgEvent"></p>
+		<p id="errorMsgOption"></p>
+
+		</fieldset>
+
+		<input type="submit" value="Submit" class="button" id="submit"/>
+		<br/>
+		<input type="reset" value="Reset" class="button" id="reset"/>
+		<br/>
+		</section>
+	</div>
+	
+	<!-- footer -->
+	<footer>
+	Moonbeam Publishing &copy Fall 2019
+	</footer>	
+<script src="scripts/registerjs.js"></script>
+<script src="scripts/modernizr.custom.05819.js"></script>
+</body>
+</html>
